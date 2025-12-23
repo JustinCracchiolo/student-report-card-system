@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Class</title>
+    <link rel = "stylesheet" href = "addclass.css">
+</head>
+<body>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="students.html">Add Student</a>
+    <a href="addClass.html">Add Class</a>
+    <a href="view.html">View Report Card</a>
+    </nav>  
+
+    <h1>Add Class for Student</h1>
+
+    <!-- This form is for adding a students grade for a class to the database -->
+    <form id="classForm">
+        <div class="container">
+            <label>Student ID:</label>
+        <input type="number" id="student_id" required>
+        </div>
+
+        <div class="container">
+             <label>Class Name:</label>
+             <input type="text" id="class_name" required>
+        </div>
+
+        <div class="container">
+            <label>Grade:</label>
+            <input type="text" id="grade" required>
+        </div>
+
+        <button type="submit">Add Class Information</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script src="addClass.js"></script>
+</body>
+</html>
